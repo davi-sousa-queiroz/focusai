@@ -367,6 +367,7 @@ ul li:focus-visible {
   align-items: center;
   background: linear-gradient(to bottom, white, rgb(237, 219, 255), rgb(119, 0, 255));
   padding-bottom: 12rem;
+  flex-direction: column;
 }
 
 /* From Uiverse.io by Yaya12085 */ 
@@ -470,4 +471,20 @@ ul li:focus-visible {
   gap: 1.5rem;
   flex-wrap: wrap;
   padding: 1rem 0;
+}
+
+.pricee {
+  margin-bottom: 7rem;
+  font-weight: 900;
+  color: #e8e8e8;
+  font-size: 2em;
+  background-color: rgb(0, 0, 0);
+  border: 3px solid rgb(132, 0, 255);
+  border-radius: 23px;
+  padding: 1rem 1rem;
+  box-shadow: 6px 6px 5px rgb(200, 0, 255);
+}
+
+.aff{
+  color: #7300ff;
 }
