@@ -236,8 +236,26 @@ ul li:focus-visible {
   100% { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes floatySmall {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(-1deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+@keyframes pulseOpacity {
+  0% { opacity: 1; }
+  50% { opacity: 0.35; }
+  100% { opacity: 1; }
+}
+
+@keyframes pulseColor {
+  0% { color: rgb(65,65,65); }
+  50% { color: rgb(170,0,225); }
+  100% { color: rgb(65,65,65); }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .hero-content, .focus-heading { animation: none !important; transition: none !important; }
+  .hero-content, .focus-heading, .free, .av { animation: none !important; transition: none !important; }
 }
 
 .section-1 {
@@ -245,11 +263,82 @@ ul li:focus-visible {
     height: 100vh;
     scroll-behavior: smooth;
     display: flex;
-    margin-left: 10%;
     max-width: 100%;
+    justify-content: space-around;
 }
 
-.features-heading {
-  font-size: 3.6em;
-  padding-bottom: 40px;
+.section-1-content {
+    max-width: 37%;
+}
+
+.everything {
+    height: 400px;
+    border-radius: 20px;
+    border: 4px solid rgb(170, 0, 255);
+    box-shadow: 0px 0px 40px rgb(119, 0, 255);
+}
+
+.free {
+  font-size: 5.25em;
+  color: #a33bff;
+  display: inline-block;
+  transform-origin: center;
+  animation: floatySmall 4s ease-in-out infinite;
+  will-change: transform;
+  text-shadow: 0 8px 30px rgba(163,59,255,0.18);
+}
+
+.advanced {
+  font-size: 3em;
+}
+
+.para {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(65, 65, 65);
+    word-spacing: 0.2em;
+    line-height: 1.3em;
+}
+.foot {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.get {
+  font-size: 1rem;
+  padding: 0.8em 2em;
+  background-color: #000;
+  border: 3px solid rgb(162, 0, 255);
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px rgb(191, 0, 255);
+}
+
+.get:hover {
+  transform: translate(5px, -5px);
+}
+
+.av {
+  max-width: 6rem;
+  display: inline-block;
+  opacity: 1;
+  color: rgb(65,65,65);
+  animation: pulseOpacity 3s ease-in-out infinite, pulseColor 3s ease-in-out infinite;
+  will-change: opacity, color;
+}
+
+.av:hover {
+  color: darkorchid;
+}
+
+.section-1-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
 }
