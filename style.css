@@ -45,19 +45,17 @@ body {
 }
 
 .navbar ul li {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 700;
-    color: #e6e6e6;
+    color: #000000;
     cursor: pointer;
     transition: color 300ms ease, transform 300ms ease;
-    box-shadow: 0px 0px 10px rgb(36, 0, 90);
     padding: 10px;
-    background-color: #000000;
-    border-radius: 7px;
+    background-color: #ffffff00;
 }
 
 ul li:hover {
-    color: #c175ff;
+    color: #c300ff;
     transform: translateY(-3px);
 }
 
@@ -367,7 +365,7 @@ ul li:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, white, rgb(239, 239, 239));
+  background: linear-gradient(to bottom, white, rgb(237, 219, 255), rgb(119, 0, 255));
   padding-bottom: 12rem;
 }
 
