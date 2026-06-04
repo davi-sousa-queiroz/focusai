@@ -66,8 +66,8 @@ ul li:focus-visible {
 
 /* From Uiverse.io by adamgiebl */ 
 .cssbuttons-io-button {
-  background: #000000;
-  color: white;
+  background: #ffffff00;
+  color: rgb(0, 0, 0);
   font-family: inherit;
   padding: 0.35em;
   padding-left: 1.2em;
@@ -365,7 +365,7 @@ ul li:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, white, rgb(237, 219, 255), rgb(119, 0, 255));
+  background: linear-gradient(to bottom, white, rgb(237, 219, 255), rgb(171, 97, 255));
   padding-bottom: 12rem;
   flex-direction: column;
 }
@@ -486,5 +486,5 @@ ul li:focus-visible {
 }
 
 .aff{
-  color: #7300ff;
+  color: #ac27ff;
 }
