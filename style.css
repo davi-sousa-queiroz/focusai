@@ -507,7 +507,7 @@ ul li:focus-visible {
   color: #7300ff;
   display: inline-block;
   transform-origin: center;
-  animation: floatySmall 4s ease-in-out infinite;
+  animation: floatySmall 3s ease-in-out infinite;
   will-change: transform;
   text-shadow: 0 8px 30px rgba(66, 0, 147, 0.18);
 }
