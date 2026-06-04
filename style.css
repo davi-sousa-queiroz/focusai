@@ -367,7 +367,7 @@ ul li:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, white, lightgray);
+  background: linear-gradient(to bottom, white, rgb(239, 239, 239));
   padding-bottom: 12rem;
 }
 
