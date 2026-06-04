@@ -13,26 +13,30 @@ body {
     color: #1a1a1a;
     background: #f8f9fb;
     scroll-behavior: smooth;
+    background-color: #000000;
 }
 
 .navbar {
     width: 100%;
     margin: 0 auto;
     padding: 0 1.5rem;
-    height: 70px;
+    height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.132);
+    background-color: #000000;
+    box-shadow: 0 0px 20px rgb(0, 0, 0);
     position: fixed;
     z-index: 10000000;
+    background: transparent;
 }
 
 .navbar .logo img {
-    height: 60px;
+    height: 50px;
     width: auto;
     display: block;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
 }
 
 ul {
@@ -42,15 +46,19 @@ ul {
 }
 
 ul li {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
-    color: #3b3b3b;
+    color: #e6e6e6;
     cursor: pointer;
     transition: color 300ms ease, transform 300ms ease;
+    box-shadow: 0px 0px 10px rgb(36, 0, 90);
+    padding: 10px;
+    background-color: #9b5cffda;
+    border-radius: 7px;
 }
 
 ul li:hover {
-    color: #8800ff;
+    color: #000000;
     transform: translateY(-3px);
 }
 
@@ -139,11 +147,11 @@ ul li:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 .focus-heading {
-  font-size: clamp(3.25rem, 9vw, 7.5rem);
+  font-size: 75px;
   line-height: 1.02;
   font-weight: 800;
   background: linear-gradient(90deg, #ffffff, #420093, #ffffff);
@@ -152,22 +160,22 @@ ul li:focus-visible {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  text-shadow: 0 6px 30px rgba(106,0,255,0.12);
+  text-shadow: 0 6px 50px rgb(124, 0, 219);
   transition: transform 100ms cubic-bezier(.2,.9,.3,1), text-shadow 300ms;
   animation: gradientShift 6s linear infinite, fadeUp 900ms ease both;
 }
 
 .hero-subtitle {
   max-width: 36rem;
-  margin: 1rem auto 0;
+  margin: 0.2rem auto 0;
   font-size: clamp(1rem, 1.3vw, 1.25rem);
   line-height: 1.75;
-  font-weight: 500;
+  font-weight: 600;
   color: #000000;
   opacity: 1;
-  text-shadow: 0 2px 12px rgba(8, 7, 18, 0.18);
+  text-shadow: 0 2px 30px rgb(111, 0, 255);
   transition: color 300ms ease, transform 300ms ease;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .hero-subtitle:hover {
@@ -233,7 +241,9 @@ ul li:focus-visible {
 }
 
 .section-1 {
-    background: linear-gradient(to bottom, white, rgba(170, 67, 255, 0.341));
+    background-color: #ffffff;
     height: 100vh;
     scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
 }
