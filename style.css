@@ -13,7 +13,7 @@ body {
     color: #1a1a1a;
     background: #f8f9fb;
     scroll-behavior: smooth;
-    background-color: #8d6df7be;
+    background-color: #FAF9F6;
 }
 
 .navbar {
@@ -609,4 +609,33 @@ ul li:focus-visible {
   border-radius: 8px;
   backdrop-filter: blur(10px);
   letter-spacing: 0.5px;
+}
+
+.section-4 {
+  margin-top: 10rem;
+  padding: 2rem;
+  height: 100vh;
+  width: 100%;
+  background-color: #FAF9F6;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 37%;
+}
+
+.contents-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.review {
+  border: 2px solid gray;
+  height: 150px;
+  width: 700px;
 }
