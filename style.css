@@ -259,8 +259,82 @@ ul li:focus-visible {
   100% { transform: translateY(0) rotate(0deg); }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .hero-content, .focus-heading, .free, .av, .everything { animation: none !important; transition: none !important; }
+.section-4 {
+  padding: 5rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  background: linear-gradient(180deg, #faf9f6 0%, #ffffff 100%);
+}
+
+.section-4 .testimonials {
+  font-size: 0.95rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8000ff;
+  font-weight: 700;
+}
+
+.section-4 .bigger {
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  line-height: 1.05;
+  text-align: center;
+  max-width: 14ch;
+  color: #120f24;
+}
+
+.review-container {
+  width: min(100%, 1120px);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.review {
+  min-height: 220px;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(123, 82, 185, 0.24);
+  background: #ffffff;
+  box-shadow: 0 22px 56px rgba(123, 82, 185, 0.08);
+  transition: transform 300ms ease, box-shadow 300ms ease, border-color 300ms ease;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.review:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgb(144, 0, 255);
+  border-color: rgb(0, 0, 0);
+  border: 2px solid black;
+}
+
+.review p {
+  margin: 0;
+  color: #3f2e68;
+  line-height: 1.75;
+}
+
+.review .stars {
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  color: #8000ff;
+}
+
+.review .review-author {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #190f35;
+}
+
+.review .review-author span {
+  display: block;
+  font-weight: 500;
+  color: #8400ff;
 }
 
 .section-1 {
@@ -613,29 +687,11 @@ ul li:focus-visible {
 
 .section-4 {
   margin-top: 10rem;
-  padding: 2rem;
   height: 100vh;
   width: 100%;
   background-color: #FAF9F6;
-  display: flex;
-  justify-content: space-around;
 }
 
-.text-4 {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 37%;
-}
-
-.contents-4 {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.review {
-  border: 2px solid gray;
-  height: 150px;
-  width: 700px;
+.dnt {
+  color: #7300ff;
 }
