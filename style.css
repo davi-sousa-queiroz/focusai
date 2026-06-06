@@ -90,6 +90,7 @@ ul li:focus-visible {
   height: 2.8em;
   padding-right: 3.3em;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .cssbuttons-io-button .icon {
