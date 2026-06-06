@@ -1,4 +1,4 @@
-# 🧠 Focus AI
+# 🧠 Focus AI (June 3rd - 6th 2026)
 
 A modern AI-powered productivity landing page built with HTML and CSS.
 
