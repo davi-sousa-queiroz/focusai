@@ -10,6 +10,29 @@ Focus AI is a fictional SaaS product designed to help users organize tasks, elim
 
 ⸻
 
+## Preview 📷
+
+### Hero Section
+![Hero](static/hero.png)
+
+### Features Section
+![Features](static/features.png)
+
+### Stats Section
+![Stats](static/stats.png)
+
+### Pricing Section
+![Pricing](static/pricing.png)
+
+### Testimonials Section
+![Testimonials](static/testimonials.png)
+
+### FAQ Section
+![FAQ](static/faq.png)
+
+### Footer Section
+![Footer](static/footer.png)
+
 ## 🚀 Features
 
 ### 🎯 Hero Section
