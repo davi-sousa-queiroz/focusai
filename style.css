@@ -784,7 +784,7 @@ ul li:focus-visible {
 }
 
 .stats-container {
-  height: 50%;
+  height: auto;
   width: 87%;
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.237);
@@ -792,7 +792,9 @@ ul li:focus-visible {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-right: 50px;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 1.5rem;
   transition: transform 350ms ease, box-shadow 350ms ease;
 }
 
@@ -801,11 +803,7 @@ ul li:focus-visible {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.18);
 }
 
-.stat-info {
-  max-width: 25%;
-}
-
-.stats-container > .stat:not(.stat-info) {
+.stats-container > .stat {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -827,21 +825,6 @@ ul li:focus-visible {
 
 .stats-container > .stat:nth-child(5) {
   animation-delay: 0.8s;
-}
-
-.our {
-  font-size: 4em;
-  color: #0f0f0f;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-}
-
-.our-explain {
-  font-size: 1.2em;
-  letter-spacing: 0.08em;
-  color: #4f4f4f;
-  font-weight: 500;
-  line-height: 1.7;
 }
 
 .stat {
@@ -1008,6 +991,7 @@ ul li:focus-visible {
 }
 
 .small-para {
+  width: 100%;
   margin: 0 auto;
   max-width: 40rem;
   line-height: 1.9;
@@ -1026,6 +1010,8 @@ ul li:focus-visible {
   font-weight: 700;
   box-shadow: 0 18px 50px rgba(115, 0, 255, 0.2);
   transition: transform 220ms ease, box-shadow 220ms ease;
+  align-self: center;
+  width: fit-content;
 }
 
 .cta-button:hover {
